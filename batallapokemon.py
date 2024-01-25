@@ -8,7 +8,7 @@ defensa_jugador=100
 ataques=['latigo','ascuas','placaje']
 
 while PS_jugador>0 and PS_oponente>0:
-    ataque_jugador= ""
+    ataque_jugador= "a"
     while ataque_jugador=="":
         ataque_jugador = input("Introduzca el ataque: ")
         if ataque_jugador =="malisioso":
@@ -30,14 +30,14 @@ while PS_jugador>0 and PS_oponente>0:
     
     while not ataque_jugador=="":
          ataque_oponente =""
-         ataque_oponente = random.randrage(1,1+3)
+         ataque_oponente = random.randrange(1,1+3)
          if ataque_oponente==1: #latigo
              defensa_jugador-=10
              print(ataques[0],"lo uso tu oponente")
          elif ataque_oponente==2: #placaje
              PS_jugador-=35 * defensa_jugador/100
              print(ataques[1],"lo uso tu oponente")
-         elif ataque_oponente==3:
+         elif ataque_oponente==3: #pistola de agua
              PS_jugador-=40
              print(ataques[2],"lo uso tu oponente")
              #randrange garantizado a ser uno de estos 3 valore
