@@ -34,9 +34,9 @@ barco1 = Ship("Jeanneau", "NC", "blanco", 2018)
 barco2 = Ship("Hanse", "630e", "negro", 2006)
 
 if int(x)==1:
-    print("Carro: ", barco1.show_attr())
+    print("Barco: ", barco1.show_attr())
 else:
-    print("Carro: ", barco2.show_attr())
+    print("Barco: ", barco2.show_attr())
 
 class Airplane:
     def __init__(self, brand, model, color, year):
@@ -54,6 +54,6 @@ avion1 = Airplane("Cessna", "Citation Mustang", "blanco", 2007)
 avion2 = Airplane("Dassault Aviation", "Falcon 100", "blanco", 1984)
 
 if int(x)==1:
-    print("Carro: ", avion1.show_attr())
+    print("Avion: ", avion1.show_attr())
 else:
-    print("Carro: ", avion2.show_attr())
+    print("Avion: ", avion2.show_attr())
